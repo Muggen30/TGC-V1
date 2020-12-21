@@ -89,3 +89,7 @@ h1 {
 form {
   text-align: center;
 }
+
+.Obligatoire {
+  color: red;
+}

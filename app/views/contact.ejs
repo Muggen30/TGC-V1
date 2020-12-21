@@ -2,32 +2,26 @@
     
     <main>
       <div class="club-content">
-        <form name="antForm1" method="post" action="" id="ant_main_form">
+        <form method="POST" action="/contact" id="">
           <input type="hidden" name="form_state" value="first" />
           <div id="formulaire">
-            <input name="mail_format" type="hidden" value="html" /><input
-              type="hidden"
-              name="ogone_quant_mail_format"
-              value="1"
-            />
 
-            <div class="formItemCol">
+            <div>
               <label for="ch-id"
                 >Nom <span class="Obligatoire"> * </span></label
               >
-              <div style="overflow: hidden">
+              <div >
                 <input
                   class="Input"
-                  name="id"
+                  name="nom"
                   type="text"
                   size="50"
-                  value=""
                   id="ch-id"
                   placeholder="Nom"
                 />
               </div>
             </div>
-            <div class="formItemCol">
+            <div>
               <label for="ch-prenom"
                 >Prénom <span class="Obligatoire"> * </span></label
               >
@@ -37,54 +31,51 @@
                   name="prenom"
                   type="text"
                   size="50"
-                  value=""
                   id="ch-prenom"
                   placeholder="Prénom"
                 />
               </div>
             </div>
 
-            <div class="formItemCol">
+            <div>
               <label for="ch-tel"
                 >Téléphone <span class="Obligatoire"> * </span></label
               >
-              <div style="overflow: hidden">
+              <div >
                 <input
                   class="Input"
                   name="tel"
                   type="text"
                   size="50"
-                  value=""
                   id="ch-tel"
                   placeholder="06********"
                 />
               </div>
             </div>
-            <div class="formItemCol">
+            <div>
               <label for="ch-email"
                 >Courriel <span class="Obligatoire"> * </span></label
               >
-              <div style="overflow: hidden">
+              <div >
                 <input
                   class="Input"
                   name="email"
                   type="text"
                   size="50"
-                  value=""
                   id="ch-email"
                   placeholder="Email"
                 />
               </div>
             </div>
-            <div class="formItemCol">
+            <div>
               <label for="ch-descr"
                 >Message
-                <span class="Obligatoire">&nbsp;&nbsp;&nbsp;</span></label
+                <span class="Obligatoire"></span></label
               >
-              <div style="overflow: hidden">
+              <div >
                 <textarea
                   class="Input"
-                  name="descr"
+                  name="description"
                   rows="10"
                   cols="50"
                   id="ch-descr"

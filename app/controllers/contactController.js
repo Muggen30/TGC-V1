@@ -1,3 +1,6 @@
+/*const nodemailer = require('nodemailer');
+const transporter = nodemailer.createTransport(transport[defaults]);*/
+
 const contactController = {
 
 
@@ -5,8 +8,10 @@ const contactController = {
         res.render('contact');
     },
 
-    formSubmit: (req, res) => {
-        res.render('index');
+    sendMail: (req, res) => {
+        const message = req.body
+        console.log(message);
+        res.redirect('/');
     }
 };
 

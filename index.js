@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 1234;
 
@@ -18,7 +19,9 @@ app.set('views', 'app/views');
 
 // methode 'express dans le dossier public 
 app.use(express.static('static'));
-
+app.use(express.urlencoded({
+  extended: true
+}));
 
 
 app.listen(PORT, () => {

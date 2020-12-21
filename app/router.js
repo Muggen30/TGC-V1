@@ -12,6 +12,7 @@ router.get('/', mainController.homePage);
 router.get('/activites', mainController.activitiesPage);
 router.get('/club', mainController.clubPage);
 router.get('/contact', contactController.contactPage);
+router.post('/contact', contactController.sendMail);
 
 
 module.exports = router;
